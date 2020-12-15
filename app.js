@@ -13,6 +13,6 @@ configureSocket();
 server.listen(port);
 
 function configureSocket() {
-	const io = require('socket.io').listen(server);
+	const io = require('socket.io')(server);
 	socketEvents.baseSocket(io);
 }

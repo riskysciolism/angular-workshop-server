@@ -1,6 +1,7 @@
 var todoItems = require("./todo-items");
 
 function update(io, socket) {
+    console.dir(todoItems)
     io.emit('update', todoItems);
 }
 
